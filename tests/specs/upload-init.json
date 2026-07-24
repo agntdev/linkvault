@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Upload File",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Initiate file upload flow with optional metadata input"
+            }
+          }
+        ],
+        "send": {
+          "callback": "upload:init"
+        }
+      }
+    ]
+  }
+]
